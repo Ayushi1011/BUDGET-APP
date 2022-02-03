@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset= "UTF-8">
+        <title>BUDGET APP USING VANILLA JAVASCRIPT</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div id="heading"><h1>BUDGET-APPLICATION</h1></div>
+            <div id="content">
+            <h3>TOTAL BALANCE</h3>
+            <h1 id="balance">₹ 0.00</h1>
+
+<h2>Add New Budget</h2>
+            <form id="form">
+                <div class="textInForm">
+                    <b><label id="ent">ENTRY</label></b>
+                    <input type="text" id="entry_val" placeholder="Enter Text...">
+                </div>
+                <div class="textInForm1">
+                <b><label id="amt">AMOUNT</label></b>
+                    <input type="number" id="amount_val" placeholder="Enter Amount...">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+<h2>TRANSACTION HISTORY</h2>
+
+           <div class=section_1> 
+                <label id="debit_column">DEBIT</label>
+               <ul  id="budgetHistory" class="budgetHistory"><li>Entry <span>Amount</span></li></ul>
+                <ul id="debitlist" class="debitlist">
+                <!-- <li class="debit">book<span id="span_position">-800</span><button class="removeBtn">x</button></li> -->
+            </ul>  
+            </div>    
+            
+            <div class=section_2> 
+                <label id="credit_column">CREDIT</label>
+                <ul  id="budgetHistory" class="budgetHistory"><li>Entry <span>Amount</span></li></ul>
+                <ul id="creditlist" class="creditlist">
+                <!-- <li class="credit">book<span id="span_position">+800</span><button class="removeBtn">x</button></li> -->
+             </ul>  
+             </div> 
+
+            </div>
+        </div>
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,173 @@
+body{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    min-height: 60vh;
+    margin:auto;
+    width:1000px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+#heading{
+    padding-left: 350px;;
+    color:rgb(19, 138, 138);;
+}
+
+h1#balance{
+    
+    color:rgb(19, 138, 138);;
+}
+
+h2{
+    border-bottom: 2px solid #bbb;
+    padding-bottom: 10px;
+}
+
+h3{
+    padding-top: 20px;
+}
+
+label{
+    display: inline-block;
+    margin: 10px 0;
+}
+
+input[type="text"],input[type="number"]
+{
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width:100%;
+    
+    
+}
+
+
+
+.textInForm{
+    float: left;
+    width:45%; 
+    padding-bottom: 15px; 
+}
+
+.textInForm1{
+    float: right;
+    width: 45%;
+}
+
+
+.btn{
+    cursor: pointer;
+    background-color:rgb(19, 138, 138);
+    box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgpa(0,0,0,0.24);
+    color: white;
+    border:0;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width:102%;
+    
+}
+
+.budgetHistory{ 
+    border-bottom:1px solid #bbb;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 30px;    
+}
+
+.budgetHistory li{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.debitlist{
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 40px;  
+    
+
+}
+
+.debitlist li{
+    display: flex;
+    justify-content: space-between; 
+    background-color:rgba(77, 148, 168, 0.274);
+    color:#333;
+    padding: 8px;
+    margin: 8px 0;
+    box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgpa(0,0,0,0.24); 
+    
+}
+
+span#span_position{
+    position: relative;
+    left:180px;
+}
+
+.creditlist{
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 40px;  
+
+}
+
+.creditlist li{
+    display: flex;
+    justify-content: space-between; 
+    background-color:rgba(77, 148, 168, 0.274);
+    color:#333;
+    padding: 8px;
+    margin: 8px 0;
+    box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgpa(0,0,0,0.24); 
+    
+}
+
+
+.creditlist li.credit{
+    border-left: 5px solid green;
+}
+
+.debitlist li.debit{
+    border-left: 5px solid rgb(255, 47, 47);
+}
+
+.removeBtn {
+    cursor: pointer;
+    background-color: #836464;
+    border: 0;
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 30px; 
+    border-radius: 50%;
+  }
+
+
+  .section_1{
+      float:left;
+      width:45%;
+  }
+  .section_2{
+    float:right;
+    width:45%;
+}
+
+#debit_column,#credit_column{
+    background-color:rgb(19, 138, 138);
+    box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgpa(0,0,0,0.24);
+    color: white;
+    border:0;
+    display: block;
+    padding: 8px;
+    text-align: center;
+   
+
+}
+ 
+
+
