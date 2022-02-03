@@ -6,14 +6,14 @@ const debitList = document.getElementById("debitlist");
 const creditList = document.getElementById("creditlist");
 const transactions = [];
 
-function updateLocalStorage() {
-  localStorage.setItem("transactions", JSON.stringify(transactions));
+function updatesessionStorage() {
+  sessionStorage.setItem("transactions", JSON.stringify(transactions));
 }
 
-const localStorageTransactions = JSON.parse(
-  localStorage.getItem("transactions")
+const sessionStorageTransactions = JSON.parse(
+  sessionStorage.getItem("transactions")
 );
-updateTotalBudget(localStorageTransactions);
+updateTotalBudget(sessionStorageTransactions);
 
 function addNewBudget(e) {
   e.preventDefault();
@@ -49,7 +49,7 @@ function addNewBudget(e) {
     creditList.appendChild(transactionData);
   }
   updateTotalBudget(transactions);
-  updateLocalStorage();
+  updatesessionStorage();
 }
 
 form.addEventListener("submit", addNewBudget);
@@ -66,5 +66,5 @@ function removeTransaction(transactionID) {
   transactions.splice(
     transactions.findIndex((a) => a.id === transactionID),1);
   updateTotalBudget(transactions);
-  updateLocalStorage();
+  updatesessionStorage();
 }
